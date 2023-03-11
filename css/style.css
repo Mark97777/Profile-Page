@@ -1,0 +1,258 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main-container {
+	background-color: pink;
+	width: 100vw;
+	height: 100vh;
+	padding: 1rem;
+}
+
+.main-container .dashboard-container {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
+.main-container .dashboard-container .nav {
+	background-color: ;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-radius: 12px;
+}
+
+.main-container .dashboard-container .nav .inner-nav-appName {
+	background-color: ;
+	width: 20%;
+	padding: 0.5em;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-radius: 12px;
+}
+
+.main-container .dashboard-container .nav .inner-nav-appName .logo-img {
+	background-color: ;
+	width: 3rem;
+	height: 2rem;
+}
+
+.main-container .dashboard-container .nav .inner-nav-left {
+	background-color: ;
+	width: 30%;
+	padding: 0.5em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-radius: 12px;
+	color: white;
+}
+
+.main-container .dashboard-container .nav .inner-nav-left ul li{
+	display: inline;
+	padding: 0.5rem;
+	transition: 200ms;
+	cursor: pointer;
+	background-color: gray;
+}
+
+.main-container .dashboard-container .nav .inner-nav-left ul li:hover {
+	transition: 200ms;
+	background-color: #333;
+	color: white;
+}
+
+.main-container .dashboard-container .nav .inner-nav-left ul li:active {
+	transition: 200ms;
+	background-color: #333;
+	color: orange;
+	box-shadow: 0px 6px 9px 0px gainsboro;
+}
+
+.main-container .dashboard-container .nav .inner-nav-right {
+	background-color: ;
+	width: 30%;
+	padding: 0.5em;
+	border-radius: 12px;
+}
+
+.main-container .dashboard-container .nav .inner-nav-right .profile {
+	background-color: ;
+	width: 30%;
+}
+
+/* css for profile's body */
+.main-container .dashboard-container .body {
+	background-color: white;
+	height: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.main-container .dashboard-container .body .body-left {
+	background-color: ;
+	width: 50%;
+	height: 100%;
+	box-shadow: 0px 6px 9px 9px gainsboro;
+}
+
+.main-container .dashboard-container .body .body-left .gallary-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: ;
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	padding: 0.5rem;
+	overflow: auto;
+}
+
+.main-container .dashboard-container .body .body-left .gallary-container .gallary-photo {
+	background-color: white;
+	width: 30%;
+	height: 30%;
+	margin: 0.3rem;
+}
+
+.main-container .dashboard-container .body .body-left .gallary-container .gallary-photo img {
+	
+}
+
+.main-container .dashboard-container .body .body-left .gallary-container .gallary-photo img:hover {
+	opacity: 80%;
+	background-color: #333;
+}
+
+.main-container .dashboard-container .body .body-right {
+	background-color: #999;
+	width: 40%;
+	height: 100%;
+}
+
+.main-container .dashboard-container .body .body-right .profile-container {
+	background-image: url('../pictures/arts.jpg');
+	background-size: 100% 100%;
+	width: 90%;
+	height: 90%;
+	margin: auto;
+}
+
+.main-container .dashboard-container .body .body-right .profile-container .profile-card {
+	background-color: ;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.main-container .dashboard-container .body .body-right .profile-container .profile-card img {
+	transition: 300ms;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 8rem;
+	border: 5px solid white;
+}
+
+.main-container .dashboard-container .body .body-right .profile-container .profile-card img:hover {
+	transition: 300ms;
+	transform: scale(0.5);
+}
+
+.main-container .dashboard-container .post-container {
+	width: 100%;
+	margin-top: 2rem;
+	background-color: white;
+	height: 20%;
+}
+
+.main-container .dashboard-container .post-container .input-form {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	background-color: white;
+}
+
+.main-container .dashboard-container .post-container .input-form form .input-field {
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 0.5rem;
+}
+
+.main-container .dashboard-container .post-container .input-form form .input-field input[type='file'] {
+	width: 80%;
+	height: 2.5rem;
+	border-radius: 12px;
+	box-shadow: 0px 6px 9px 9px gainsboro;
+}
+
+.main-container .dashboard-container .post-container .input-form form .input-field input[type='submit'] {
+	width: 80%;
+	height: 2.5rem;
+	border-radius: 12px;
+	box-shadow: 0px 6px 9px 9px gainsboro;
+}
+
+/* display for smaller screens */
+
+@media screen and (max-width: 700px) {
+	
+	.main-container {
+		background-color: pink;
+		width: 100vw;
+		height: auto;
+		padding: 1rem;
+	}
+	
+	.main-container .dashboard-container {
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.main-container .dashboard-container .body {
+		background-color: white;
+		height: 60%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.main-container .dashboard-container .body .body-left {
+		background-color: ;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0px 6px 9px 9px gainsboro;
+	}
+	
+	.main-container .dashboard-container .body .body-right {
+		background-color: #999;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.main-container .dashboard-container .nav {
+		background-color: ;
+		padding: 0.5rem;
+		display: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		border-radius: 12px;
+	}
+	
+}
